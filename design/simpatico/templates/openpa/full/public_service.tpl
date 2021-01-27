@@ -50,11 +50,12 @@
                 var bootstrapButton = $.fn.button.noConflict() // return $.fn.button to previously assigned value
                 $.fn.bootstrapBtn = bootstrapButton
             {rdelim});
-            var pageID = "{$node.object.id}-{$node.object.current_version}";
+            var pageID = "2135-42{*$node.object.id}-{$node.object.current_version*}";
             var simpaticoEservice = "{$node.data_map.simpatico_service_id.data_text|wash()}";
         </script>
         {ezscript_require(array(
             'jquery-migrate.min.js',
+            'jquery.popupoverlay.js',
             'log-core.js',
             'ctz-ui.js',
             'ctz-core.js',
