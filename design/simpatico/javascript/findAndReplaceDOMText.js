@@ -252,7 +252,7 @@
 
             var elementFilter = this.options.filterElements;
             var forceContext = this.options.forceContext;
-
+            if (this.node === null) return '';
             return getText(this.node);
 
             /**

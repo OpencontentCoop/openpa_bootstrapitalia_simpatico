@@ -364,7 +364,7 @@ var taeUIInline = (function () {
         function makeColorOfWord(instance, id, color, arrWord) {
             var replaceStrArray = [], previousStart, lastEnd = 0;
             var str = document.getElementById(id);
-            var myString = str.innerHTML;
+            var myString = str ? str.innerHTML : '';
             $.each(arrWord, function (index, value) {
                 if (color == true) {
 
